@@ -8,6 +8,8 @@ date: "2025-04-23"
 
 Welcome to the Open Science and Reproducible Research Course! This course is designed to introduce learners to the ideas of Open Science and Reproducible Research, and to give them a hands-on introduction into tools that facilitate open and reproducible workflows.
 
+You can start the course via this link: [https://liascript.github.io/course/?https://raw.githubusercontent.com/AUSSDA/reproducible_research/refs/heads/main/open_science_reproducible_research.md](https://liascript.github.io/course/?https://raw.githubusercontent.com/AUSSDA/reproducible_research/refs/heads/main/open_science_reproducible_research.md)
+
 ## Description
 
 The course is structured as a stand-alone online self-study module created with LiaScript. It is suited for researchers of all levels and experiences, and discipline-agnostic, although examples are geared towards members of the Social Science community. 
