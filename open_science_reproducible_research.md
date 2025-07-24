@@ -3,7 +3,7 @@ author:   Anita Bodlos & Lisa Hirsch & Franz Eder
 
 email:    info@aussda.at
 
-version:  1.0.0
+version:  1.0.1
 
 language: en
 
@@ -52,7 +52,7 @@ By the end of the module, you will:
 * Develop a reproducible workflow for your own research projects 
 
 <!-- style="background-color: #6EC7D9;"--> 
-> **Pre-requisites to the module**
+> ** Do I need to take any other courses before taking this course?**
 >
 > You do not need any other courses to take this course. As the main aim is to give an overview of useful tools, you do not need to install any software to complete the course. However, if you would like to try out the software yourself, you might need administrator rights to install some of the programs. We are focussing on non-proprietary software in this course.
 >
@@ -97,13 +97,14 @@ Another definition by the [UNESCO](https://www.unesco.org/en/open-science/about)
 Foster developed a whole taxonomy of Open Science that picks up various aspects of these definitions:
 ![Foster Taxonomy of Open Science](https://www.openscience.no/sites/default/files/media/bilder/2021/02/os_taxonomy.png "Taxonomy of Open Science by Ponitka et al 2015, https://doi.org/10.1145/2809563.2809571") 
 
-Please note that in recent years, the Open Science movement has shifted away from demanding "open data" to making data "FAIR" (Findable, Accessible, Interoperable, Re-usable; [Wilkinson et al 2016](https://doi.org/10.1038/sdata.2016.18)). One reason therefor is that there are some very good justifications to restrict the access to data. A common reason for access restrictions in the Social Sciences is protecting the privacy of research subjects (in line with data protection regulations). Hence, data do not need to be completely "open" to be "FAIR", however, the conditions under which access to data is possible need to be outlined clearly. Also, the concept of FAIR data comprises many more aspects and requires researchers e.g. to choose a mature, trustworthy repository to publish their data with a DOI to guarantee that data is findable. 
-If you would like to dive deeper into this topic and learn how you can make your data FAIR (and thereby comply to the requirements of many funding bodies), you can find some useful sources in our webinar slides on ["Research data management in the Social Sciences"](https://www.doi.org/10.5281/zenodo.14258222) and ["Data Protection in Research"](https://www.doi.org/10.5281/zenodo.14824581).
+In recent years, the Open Science movement has shifted away from demanding "open data" and noe emphasises making data "FAIR" (Findable, Accessible, Interoperable, Re-usable; [Wilkinson et al 2016](https://doi.org/10.1038/sdata.2016.18)) because there are good justifications to restrict access to - some - data: In the Social Sciences  protecting the privacy of research subjects (in line with data protection regulations) is important. In order to still make such data FAIR, they do not need to be completely open but the access conditions to the data need to be outlined clearly. 
+
+FAIR data comprises many more aspects and requires researchers e.g. to choose a mature, trustworthy repository to publish their data with a DOI to guarantee that data is findable. Are you interested in knowing more about FAIR data? Find some useful sources in our webinar slides on ["Research data management in the Social Sciences"](https://www.doi.org/10.5281/zenodo.14258222) and ["Data Protection in Research"](https://www.doi.org/10.5281/zenodo.14824581)!
 
 <!-- style="background-color: #E72E6B; color: white"--> 
 > **__Quiz I__**
 >
->Take a second to read through the definitions again and think about what they have in common! Then check all the characteristics the definitions have in common in the boxes below. 
+>Take a second to read through the definitions of Open Science again! Then tick all correct statements. 
 >
 >Click on the lightbulb to get some hints!
 
@@ -126,7 +127,7 @@ Why should you care about Open Science then?
 
 ![Open Science](https://www.ncl.ac.uk/mediav8/library/general-x2f-full-width/research/open-research/comic/comic-p3-p1.jpg"[Open Research Comic](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/open-research/comic/page3/) by Kelsey Bezaire and Dr. Helen Gray 2023 [CC BY ND](https://creativecommons.org/licenses/by-nd/4.0/deed.en)" )
 
-There are some normative reasons why Open Science advocates push for it: Open Science practices advance disciplines, foster collaboration, ultimately lead to more citations of individual scholarly works, and cater to funders' interests. Current technological developments rooted in the prevalence of the internet, emergence of big data and increased efficiency in both processing and analysing that data due to readily available computational methods ultimately lead to, allow and benefit from collaboration in large, often international teams.   
+Across all fields, Open Science practices advance disciplines, foster collaboration, lead to more citations of individual works, and cater to funders' interests. Current technological developments - the internet, emergence of big data and increased efficiency in both processing and analysing that data due to readily available computational methods - lead to, allow and benefit from collaboration in large, often international teams.   
 
 !?[⏯](video/course1-clip2.mp4 "Extract from the Infra4NextGen workshop on [*Open science and reproducible research in RStudio and Jupyter Notebook*](https://infra4nextgen.com/events/workshop-open-science-reproducible-research/), speaker: [Franz Eder](https://www.franz-eder.info/), University of Innsbruck" )
 
@@ -139,7 +140,7 @@ Second, it can refer to the effort of using different data but the same methods 
 
 What do these scenarios have in common? They both emphasize the difference between trusting and showing: Trusting research results - and trusting others to trust you - is vastly different from *showing* them the way you came to conclusions ([Stark 2017](http://www.practicereproducibleresearch.org/core-chapters/0-preface.html)).  
 
-Then, you might wonder how exactly to reach reproducibility. The following sections will go into more detail on specific tools, but here is a short summary for you before: Reproducibility is directly tied to computational methods and often used synonymously to computational reproducibility - the practice of leveraging computational methods to practice reproducible research. Watch the video below to get a deeper understanding of how computational methods and reproducibility relate:
+Then, you might wonder how exactly to reach reproducibility. The following sections will go into more detail on specific tools, but here is a short summary for you before: Reproducibility is directly tied to computational methods and often used synonymously to computational reproducibility - the practice of leveraging computational methods to practice reproducible research. Watch the video below to see how computational methods and reproducibility relate:
 
 !?[⏯](video/course1-clip3.mp4 "Extract from the Infra4NextGen workshop on [*Open science and reproducible research in RStudio and Jupyter Notebook*](https://infra4nextgen.com/events/workshop-open-science-reproducible-research/), speaker: [Franz Eder](https://www.franz-eder.info/), University of Innsbruck" )
 
@@ -218,7 +219,7 @@ Go ahead to the [next section](#10) to learn how Git works!
 
 ## 3.1. How does Git work?
 
-**What can I save files in a Git system?** [Git](https://git-scm.com/) was developed as a tool for working on software code collaboratively. For this reason, Git is most useful if you work with syntax files (e.g. R or Python) and non-proprietary files (e.g. csv or tab-delimited for data files, Latex files or Markdown for text), basically all documents that contain plain text. You can store any file in Git systems, although you may not be able to exploit the full potential of a Git system if you use proprietary formats (like Microsoft Word or Excel). 
+**What files can I save in a Git system?** [Git](https://git-scm.com/) was developed as a tool for working on software code collaboratively. For this reason, Git is most useful if you work with syntax files (e.g. R or Python) and non-proprietary files (e.g. csv or tab-delimited for data files, Latex files or Markdown for text), basically all documents that contain plain text. You can store any file in Git systems, although you may not be able to exploit the full potential of a Git system if you use proprietary formats (like Microsoft Word or Excel). 
 
 **Remote repository and local working directory:** The main logic for using Git is that you have a remote Git repository somewhere online (e.g. on your institution’s Gitlab). Then, you can “clone” this repository to your local device, e.g. your laptop. The process also works the other way round: you can also create a new remote Git repository from the files on your device. However, the principle remains the same: you have files on your local device and in a remote Git repository that is accessible by you (e.g. because you can connect to it through the internet).
 
@@ -288,7 +289,7 @@ Solution: The basic workflow of Git is that you work locally on your device, the
 ***
 
 ## 3.3. Using Git to work collaboratively
-Collaboration in Git follows a **different logic as you may know from standard synch-and-share tools** (like Dropbox or Google drive). As you already know after going through the previous sections, Git was developed for and is still widely used in software development. When multiple programmers work on the same project, they may develop individual features in parallel. Each programmer then saves their work to the common Git repository. If this work is complementary, i.e. each programmer works on a separate file, Git simply merges the information together. If multiple programmers work on the same file, there likely will be a conflict (since both updated the file). In this case, one person has to go over the changes and create a consolidated version. This works fine in software development as programmers usually work with syntax/code that is saved in easily accessible files containing plain text. For instance, you may have noticed that you can open R-files, do-files or Python code in any text editor and see the code. This way of collaboration may require a little bit more discipline and knowledge compared to synch-and-share tools. 
+Collaboration in Git follows a **different logic as you may know from standard synch-and-share tools** (like Dropbox or Google Drive). As you already know after going through the previous sections, Git was developed for and is still widely used in software development. When multiple programmers work on the same project, they may develop individual features in parallel. Each programmer then saves their work to the common Git repository. If this work is complementary, i.e. each programmer works on a separate file, Git simply merges the information together. If multiple programmers work on the same file, there likely will be a conflict (since both updated the file). In this case, one person has to go over the changes and create a consolidated version:  This way of collaboration may require a little bit more discipline and knowledge compared to synch-and-share tools. This works fine in software development as programmers usually work with syntax/code that is saved in easily accessible files containing plain text. For instance, you may have noticed that you can open R-files, do-files or Python code in any text editor and see the code.
 
 **How do I make sure that I work with the most current version?** Whenever you collaborate with someone else using Git, it is a good idea to make sure that you have the latest version of your project on your device before you start working. You can do this by means of the “pull” command, i.e. you download any changes that may have been made in the meantime by your colleagues. 
 
@@ -297,7 +298,7 @@ Another detail: There is **the possibility to work also online** and make change
 <!-- style="background-color: #E72E6B; color: white"--> 
 >__Quiz VI__ 
 >
->How does collaboration in Git work? 
+>How does collaboration work in Git? 
 > 
 >Click on the lightbulb to get some hints!
 
@@ -399,7 +400,7 @@ Solution: Git repositories are a well-suited tool for publishing code/syntax fil
 >
 > Git is a very powerful tool with inherent version control that allows for “checkouts” of previous versions. Hence, you can go back to previous versoins any time. 
 >You can collaborate using Git via “pushing” your work to a shared repository and allowing others to “pulling” your work from the same repository. Conflicts are to be expected when multiple researchers share a repository and need to be solved manually. 
->Git is most usefully when you work with syntax and easily accessible, non-proprietary formats that contain plain text (like R, markdown, csv...). 
+>Git is most useful when you work with syntax and easily accessible, non-proprietary formats that contain plain text (like R, markdown, csv...). 
 >Starting to use Git requires a little bit more effort, time and training than you may expect. However, going through the trouble is worth it! Below, you find a list of helpful training material. 
 
 
@@ -421,13 +422,13 @@ In a nutshell, [Quarto](https://Quarto.org/) is an open-source tool that allows 
 ## 4.1 Benefits of dynamic document generation using Quarto
 If you use Quarto, you can work with one tool that holds both the theoretical as well as empirical part of your publication. For instance, imagine you are writing an article. When working in Quarto, one file is sufficient for the entire paper: The file contains the discussion of your research question and relevant literature as well as the code for the analysis, figures and tables and the discussion of your results. This means that you do not need to copy-paste figures or tables or results from one document to the other (and wonder if you ever forgot to copy any new versions of tables and figures).  
 
-You can even directly reference your model outcomes and estimates in the text, which are then updated if you rerun the analyses/ you render your document. For instance, instead of copy-pasting the mean of a variable, you can include some R code in the text that calculates the mean and includes this figure directly in the text. Thereby you can not only be sure that your estimates are up to date and immune to typing or rounding errors, but others can also easily verify your calculations. You even have the possibility to let others see the code in your output document. In short, you allow others to retrace your steps -- your research becomes reproducible. 
+You can even directly reference your model outcomes and estimates in the text, which are then updated if you rerun the analyses or you render your document. For instance, instead of copy-pasting the mean of a variable, you can include some R code in the text that calculates the mean and includes this figure directly in the text. Thereby you can not only be sure that your estimates are up to date and immune to typing or rounding errors, but others can also easily verify your calculations. You even have the possibility to let others see the code in your output document. In short, you allow others to retrace your steps -- your research becomes reproducible. 
 
-Quarto can also facilitate creating documentation files that accompany your data. For instance, you can use R to create an overview of all variables in your data set including information on summary statistics such as the minimum, maximum or mean. The output can either be a pdf or also an html file that even includes the code. This can be usefully both for drafting documentation material for others to make your data re-usable and FAIR but also if you write a research log only for yourself as you can document in detail the reasons for the decisions you made (e.g. why you omitted specific observations). 
+Quarto can also facilitate creating documentation files that accompany your data. For instance, you can use R to create an overview of all variables in your data set including information on summary statistics such as the minimum, maximum or mean. The output can either be a pdf or also an html file that even includes the code. This can be useful both for drafting documentation material for others to make your data re-usable and FAIR (Findable, Accessible, Interoperable, Reuseable) but also if you write a research log only for yourself as you can document in detail the reasons for the decisions you made (e.g. why you omitted specific observations). 
 
 Of course, Quarto also allows you to take advantage of reference management systems ([using e.g. bibtex](https://Quarto.org/docs/get-started/authoring/text-editor.html#citations)).  
 
-You can create different output formats with Quarto, from pdf PDF to html and dashboards. You can use Quarto to write scientific publications like monographies or articles. Quarto uses Latex as a tool for creating PDFs, so your output will look like typical Latex documents. In addition, you can also use Quarto to create websites or dashboard that cater to the general public or journalists. 
+You can create different output formats with Quarto, from PDF to html and dashboards. You can use Quarto to write scientific publications like monographies or articles. Quarto uses Latex as a tool for creating PDFs, so your output will look like typical Latex documents. In addition, you can also use Quarto to create websites or dashboard that cater to the general public or journalists. 
 
 Are you eager for an example? The Austrian Foreign Policy Panel Project used Quarto for cleaning and curating data, creating a methods report in pdf as well as html and drafting a codebook including an overview of all variables as well as summary statistics and plots. You can check out all files under the DOI https://doi.org/10.11587/UJJWTG. In addition, the project used Quarto to launch a website that allows for glimpses into the data as well as some general descriptions that you can check out here: https://afp3.at/ .
 
