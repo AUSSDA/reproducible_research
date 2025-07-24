@@ -10,6 +10,11 @@ Welcome to the Open Science and Reproducible Research Course! This course is des
 
 You can start the course via this link: [https://liascript.github.io/course/?https://raw.githubusercontent.com/AUSSDA/reproducible_research/refs/heads/main/open_science_reproducible_research.md](https://liascript.github.io/course/?https://raw.githubusercontent.com/AUSSDA/reproducible_research/refs/heads/main/open_science_reproducible_research.md)
 
+## How to cite this course
+Bodlos, Anita, Hirsch, Lisa and Eder, Franz (2025): Open Science and Reproducible Research.[https://liascript.github.io/course/?https://raw.githubusercontent.com/AUSSDA/reproducible_research/refs/heads/main/open_science_reproducible_research.md](https://liascript.github.io/course/?https://raw.githubusercontent.com/AUSSDA/reproducible_research/refs/heads/main/open_science_reproducible_research.md)
+
+See below for information on re-use and licensing. 
+
 ## Description
 
 The course is structured as a stand-alone online self-study module created with LiaScript. It is suited for researchers of all levels and experiences, and discipline-agnostic, although examples are geared towards members of the Social Science community. 
@@ -28,7 +33,6 @@ Reproducible research covers a set of practices that are rooted in the idea of O
 ## How to (Re-)Use the Course
 
 The online modules are written in LiaScript, a Markdown dialect, making it convenient to customize them for your research institution. For assistance, please refer to the LiaScript documentation. 
-
 
 ## Contributors
 
